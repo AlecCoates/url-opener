@@ -3,40 +3,22 @@
 
 <head>
   <title>URL Opener</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700">
-  <style>
-    h1 {
-      font-size: 80px;
-      font-weight: 800;
-      text-align: center;
-      font-family: "Roboto", sans-serif;
-    }
-
-    h2 {
-      font-size: 25px;
-      text-align: center;
-      font-family: "Roboto", sans-serif;
-      margin-top: -40px;
-    }
-
-    p {
-      text-align: center;
-      font-family: "Roboto", sans-serif;
-      font-size: 12px;
-    }
-
-    .container {
-      width: 300px;
-      margin: 0 auto;
-      margin-top: 15%;
-    }
-  </style>
+	<script type="text/javascript" src="index.js"></script>
 </head>
 
 <body>
   <div class="container">
-    <h2>Opening URLs</h2>
+    <h2>URL Opener</h2>
   </div>
+
+  <label for="inputURLs">Input URLs:</label><br>
+  <textarea id="inputURLs" name="inputURLs" placeholder="Enter URLs" rows = "5" cols = "50" ></textarea><br><br>
+  <button onclick="submitURLs()">Create link</button><br><br>
+  <label for="outputURL">Link to open URLs:</label><br>
+  <input type="text" id="outputURL" name="outputURL" readonly="true" size="35"> 
+  <button onclick="copyOutputURL()">Copy</button>
+  <button onclick="openOutputURL()">Test</button><br><br>
+
 </body>
 
 </html>
