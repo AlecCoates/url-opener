@@ -10,5 +10,5 @@ function copyOutputURL() {
 
 function openOutputURL() {
     let outputURL = document.getElementById('outputURL').value;
-    window.open(outputURL, '_blank');
+    window.open(outputURL + '&test=1', '_blank');
 }
